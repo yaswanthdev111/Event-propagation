@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+#parent{
+    background-color: red;
+    
+    height:200px;
+    width:300px;
+
+}
+
+#child{
+    background-color: green;
+    
+    height:80%;
+    width:80%;
+
+}
+#gchild{
+    background-color: blue;
+    
+    height:80%;
+    width:80%;
+
+}
+
+#ggchild{
+    background-color:yellow;
+    
+    height:80%;
+    width:80%;
+
+}
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+
+        <div id="child">
+            <div id="gchild">
+
+                <div id="ggchild"></div>
+            </div>
+        </div>
+    </div>
+    <p id="venkat"></p>
+    <script>
+
+let parent=document.getElementById("parent");
+parent.addEventListener("click",(e)=>{
+    console.log("parent is triggerd");
+})
+let child=document.getElementById("child");
+child.addEventListener("click",(e)=>{
+    console.log("child is triggerd");
+})
+
+let gchild=document.getElementById("gchild");
+gchild.addEventListener("click",(e)=>{
+    console.log("gchild is triggerd");
+})
+let ggchild=document.getElementById("ggchild");
+ggchild.addEventListener("click",(e)=>{
+    console.log("ggchild is triggerd");
+})
+// let venkat=getElementById("venkat")
+
+
+
+
+    </script>
+    
+</body>
+</html>
